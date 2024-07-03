@@ -1,0 +1,52 @@
+Advanced Linux Commands:
+-----------------------------------------
+24. cat /etc/os-release : to see OS details
+25. sudo -i : switch to root user
+26. History : to see the commands executed in the session
+27. grep : 	to find a word in the file (grep firewall anaconda-ks.cfg)
+28. grep -i : to find a word without case sensitive (grep -i firewall anaconda-ks.cfg)
+29. grep -vi : do not show particular words (e.g: grep -vi firewall anaconda-ks.cfg)
+30. less : to read a file (e.g: less anaconda-ks.cfg)
+31. more : is also used to read a file in percentage (e.g: more anaconda-ks.cfg)
+32. head : to read a file first 10 lines by default (e.g: head anaconda-ks.cfg)
+33. head -20 anaconda-ks.cfg : to read first 20 lines of a file.
+34. tail : to read a file last 10 lines (tail anaconda-ks.cfg)
+35. tail -2 anaconda-ks.cfg : to read last 2 lines of a file.
+36. tail -f : to read a file dynamically (e.g: tail -f /var/log/messages)
+37. cut -d: : to see particular fields of a file (e.g: cut -d: f1 /etc/passwd)
+38. awk : to see particularfields more intelligelntly (e.g: awk -F':' '{print $1}' /etc/passwd)
+39. sed : to replace the required words in a file (sed 's/devops/dev-ops/g' samplefile.txt) -- its read only.
+40. sed -i : to replace the words and save the file (e.g: sed 's/devops/dev-ops/g' samplefile.txt)
+41. > : to redirect and overwrite (e.g: uptime > /tmp/sysinfo.txt)
+42. >> : to append the file content (e.g: uptime >> /tmp/sysinfo.txt)
+43. free -m : to see system memory details
+44. df -h : to see hard disk partition and utilization
+45. /dev/null : it caontains nothing, to delete output of a file, this can be used (e.g: cat /dev/null > sysinfo.txt)
+46. wc -l : number of lines in a file (wc -l /etc/passwd)
+47. ls | wc -l : number of files a directory (ls | wc -l /etc/passwd)
+48. find : to find a file (find /etc -name host*)
+49. 2>> : to append standard error to a file.
+50. &>> : to redirect and append output and error to the file
+51. useradd : to create a user (e.g: useradd aws-user)
+52. groupadd : to create a group (e.g: groupadd devops)
+53. usermod -aG : to modify user (usermod -aG devops aws-user)
+54. passwd <username> : to set/reset user password (e.g: passwd aws-user)
+55. lsof -u <username> : to see files opened by the user (lsof -u aws-user)
+56. userdel : to delete a user (userdel -r aws-user)
+57. groupdel : to delete a group (groupdel devops)
+58. chown : to change ownership of a user (chown aws-user:devops /opt/devopsdir)
+59. chmod : to change file permissions (chmod o-x /opt/devopsdir; chmod g+w /opt/devopsdir)
+60. systemctl is-active <service-name> : to check whether the service is active or not (e.g: systemctl is-active httpd) 
+61. systemctl is-enabled <service-name> : to check whether the service is enabled at boot time or not (systemctl is-enabled httpd)
+62. top : to see top cpu & ram consuming processes (its like a task manager in windows)
+63. ps aux : displays all the processes
+64. ps -ef : displays all the processes along with the parent ids.
+65. kill <pid> : to stop the process gracefully
+66. kill -9 <pid> : to stop the process forcefully
+67. ps -ef | grep httpd | awk '{print $2}' | xargs kill -9 : to forcefully kill httpd processes
+68. zombie process : its process of which its operation is completed but its entry still exist in process table.
+69. tar -czvf <fine_name> : to archive the file (e.g: tar -czvf jenkins_03072024.tar.gz jenkins)
+70. tar -xzvf <fine_name> : to unarchive the file (e.g: tar -xzvf jenkins_03072024.tar.gz
+71. zip -r <fine_name> : to archive a file (e.g: zip jenkins_03072024.zip jenkins)
+72. unzip <file_name> : to unarchive a file (e.g: unzip jenkins_03072024.zip)
+73. export EDITOR=vim : to set vim as default editor 
