@@ -1,0 +1,18 @@
+Basic Linux Commands:
+---------------------------
+date - displays current system date
+cal - displays current month calendar
+uptime - shows system uptime
+users - shows users list
+id - shows current user-id, group-id
+who - shows username along with public ip
+w - shows username, public ip, login in time, idle time, cpu usage
+
+View files:
+----------------
+ls - list files & directories
+cat - view content of file
+less - file content page by page
+more - file content page by page with percentage
+head - default first 10 lines of the file (specify no. of lines as per requirement)
+tail - default last 10 lines of the file (specify no. of lines as per requirement)
