@@ -1,0 +1,10 @@
+Linux system management:
+--------------------------------
+free : free memory of server
+/proc/meminfo : shows memory info
+/proc/cpuinfo : shows cpu info
+uname -a : kernel info
+du : disk usage
+whereis : shows locations of app/command
+which : shows which app will be run by default
+df -m : disk partition in MB.
