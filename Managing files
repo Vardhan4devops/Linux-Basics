@@ -1,0 +1,13 @@
+Managing file/dir:
+--------------------------
+cp - to copy file content (e.g: cp file1 file2)
+mv - move or rename a file (e.g: mv file1 file3)
+cd - change directory
+pwd - present working dir
+find - to find file's or dir's path
+(e.g: find -name file1 : search a file with its name,
+ find -user file1 : search a file with its user/owner,
+ find -group file1 : search a file with its group)
+
+diff - displays content difference between two files (e,g: diff file1 file2)
+file - displays what kind of a file it is
