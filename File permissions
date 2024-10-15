@@ -1,0 +1,23 @@
+File permissions:
+--------------------
+r- Read (4),
+w- Write (2),
+e- Execute (1).
+
+change permissions:
+------------------------
+chmod ugo=rwx, g=rw, o=r file_name
+ or
+chmod ugo=rwx file_name
+ or
+chmod 764 file_name
+ or
+chmod u+x, g-w, o=r file_name
+
+
+changing ownership:
+-----------------------
+Root user only can change the ownership.
+
+# chown vardhan:vardhan file_name
+# chown vardhan file3
