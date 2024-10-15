@@ -1,0 +1,17 @@
+Linux File System:
+
+------------------------
+
+/ - Root directory (parent dir for all dirs)
+
+/root - home dir for root (provides working env for root user)
+
+/home - home dir for users
+
+/usr - default dir for software installation
+
+/bin - contains commands used by users
+
+/sbin - contains commands used by super (root) user
+
+/var - contains variable data like mails, log files..
