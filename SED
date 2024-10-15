@@ -1,0 +1,15 @@
+SED (Stream Editor):
+----------------------
+sed is used to find a word and replace with given word.
+e,g: sed 's/old_text/new_text/' file_name
+ sed 's/hi/hello/' file1
+ 
+ sed 's/old_text/new_text/g' file1 (globally replace the word wherever it matches in the file)
+
+ sed 's/old-text/new_text/i' file1 (ignores case)
+
+ sed -i 's/old-text/new_text/' file1 (it updates file content also)
+
+ sed -n '5, 10p' file1 (displays content from 5th line to 10th line)
+
+ sed '10, 20d' file1 (deletes content from 10th line to 20th line)
