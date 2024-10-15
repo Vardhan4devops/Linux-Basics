@@ -1,0 +1,16 @@
+user management:
+-------------------------
+whenever a user is created in Linux, the below things happen:
+- home dir is created ()/home/username)
+- unique uid & gid are given to user,
+- an entry in /etc/passwd is created.
+
+useradd - to create a user (e,g: useradd vardhan)
+passwd vardhan - to enable password for vardhan
+ 
+To enable password authentication:
+---------------------------------------
+nano /etc/ssh/sshd_config
+PasswordAuthentication yes
+
+-- service sshd reload
