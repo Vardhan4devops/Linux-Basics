@@ -1,0 +1,8 @@
+Linux - View files:
+-----------------------
+ls - list files
+cat - view file content
+less - display file content page by page
+more - display file content page by page with percentage
+head - by default it displays first 10 lines of file content, we can give any number as per our requirement.
+tail - by default it displays last 10 lines of the file content, we can give any number as per our requirement.
