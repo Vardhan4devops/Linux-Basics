@@ -1,0 +1,10 @@
+Linux networking:
+---------------------
+hostname: name of the current server (cat /etc/hostname)
+ping <ip> : shows connection to the destination
+wget : download software/package
+if config: ip address of the server
+telnet : port availability status
+curl : access application from browser
+init 6 : restart the server
+netstat -tulpn : to see which ports are listening
