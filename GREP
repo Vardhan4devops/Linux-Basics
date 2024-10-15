@@ -1,0 +1,31 @@
+GREP: Global Regular Expression Print
+
+------------------------------------------
+
+grep <pattern> filename
+
+e.g: grep hello file1
+
+       grep Permit /etc/ssh/sshd_config (displays Permit word as it is in the file)
+
+       grep -i PERMIT /etc/ssh/sshd_config (displays all cases of permit word)
+
+
+
+Note: grep works only on files.
+
+
+
+
+
+grep with pipe:
+
+------------------
+
+grep considers the out put of a command before the pipe as a file.
+
+e.g: ls -l | grep environment (it displays environment word from out put of ls -l command)
+
+e.g: ls -l | grep ^d (to display starting char is d, useful to find directories) 
+
+e.g: grep ^t file1 (display text starting with t)
