@@ -1,0 +1,10 @@
+Linux services:
+--------------------
+service <service_name> status
+service <service_name> start
+service <service_name> stop
+service <service_name> reload
+service <service_name> restart
+chkconfig --list : check availability of service
+chkconfig <service> on : to make service on/available after restart
+chkconfig <service> off : to make service unavailable after restart
