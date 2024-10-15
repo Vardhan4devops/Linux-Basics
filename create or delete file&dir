@@ -1,0 +1,14 @@
+Linux - create/delete file&dir:
+---------------------------------
+touch - creates a 0 byte empty file
+cat > filename - create a file and allows to write
+cat >> filename - append data to existing file data
+mkdir - create a directory
+tree - displays directory structure
+rm - to remove a file
+rm -f : force removal of a file(skips confirmation)
+rmdir - remove a directory
+rm -rf : force removal of a directory
+
+Like
+
