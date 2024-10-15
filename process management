@@ -1,0 +1,7 @@
+Linux process management:
+--------------------------------
+ps -ef: list the processes which are running
+kill/kill -9 : end or force end of service/process
+fg : run program in foreground
+bg : run program in background
+top : list top 20 processes consuming more cpu
